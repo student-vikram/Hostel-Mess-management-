@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  navbar
+    a(href="/") Home
+    a(href="studentLogin") Student Login
+    a(href="employeeLogin") Employee Login
+    a(href="contact") Contact Us
+  h1 Profile
+  ul
+    li Name: #{student.name}
+    li Mobile: #{student.mobile}
+    li Address: #{student.address}
+    li Date of Birth: #{student.dob}
+    li Room Type: #{student.roomType}
+    li Food Preference: #{student.foodPreference}
+    li Username: #{student.username}
+  p
+    a(href='/logout') Logout

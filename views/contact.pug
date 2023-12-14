@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  navbar
+    a(href="/") Home
+    a(href="studentLogin") Student Login
+    a(href="employeeLogin") Employee Login
+    a(href="contact") Contact Us
+  h1 Contact Us
+  form(action='/contact' method='post')
+    label(for='name') Name:
+    input(type='text' name='name' required)
+    br
+    label(for='mobile') Mobile:
+    input(type='text' name='mobile' required)
+    br
+    label(for='email') Email:
+    input(type='text' name='email' required)
+    br
+    label(for='feedback') Feedback:
+    textarea(name='feedback' required)
+    br
+    input(type='submit' value='Submit')

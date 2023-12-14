@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 250px;
+  padding: 0;
+  text-align: center;
+  background-color: aqua;
+  background-image: url('hostel-mess.jpg')  no-repeat center center fixed;;
+}
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  input[type='submit'] {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type='submit']:hover {
+    background-color: #2980b9;
+  }
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:red;
+}
+a:-webkit-any-link {
+  color: brown;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 50px;
+
+}
+navbar{
+  color: darkseagreen;
+}
+ul {
+  display: block;
+  list-style-type: style type none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: center;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+  margin-left: 250px;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  color: green;
+}

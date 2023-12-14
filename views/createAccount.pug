@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  navbar
+    a(href="/") Home
+    a(href="studentLogin") Student Login
+    a(href="employeeLogin") Employee Login
+    a(href="contact") Contact Us
+  h1 Create Account
+  form(action='/createAccount' method='post')
+    label(for='name') Name:
+    input(type='text' name='name' required)
+    br
+    label(for='mobile') Mobile:
+    input(type='text' name='mobile' required)
+    br
+    label(for='address') Address:
+    input(type='text' name='address' required)
+    br
+    label(for='dob') Date of Birth:
+    input(type='date' name='dob' required)
+    br
+    label(for='roomType') Room Type:
+    input(type='text' name='roomType' required)
+    br
+    label(for='foodPreference') Food Preference:
+    input(type='text' name='foodPreference' required)
+    br
+    label(for='username') Username:
+    input(type='text' name='username' required)
+    br
+    label(for='password') Password:
+    input(type='password' name='password' required)
+    br
+    input(type='submit' value='Create Account')

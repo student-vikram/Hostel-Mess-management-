@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 student List
+  table
+    thead
+      tr
+        th Name
+        th mobile
+        th address 
+        th dob 
+        th roomType 
+        th foodPreference 
+        th username 
+        th action
+    tbody
+      each student in students 
+        tr
+          td= student.name
+          td= student.mobile
+          td= student.address
+          td= student.dob 
+          td= student.roomType 
+          td= student.foodPreference 
+          td= student.username
+          td
+            a(href=`/profile/${student._id}`) View
+            

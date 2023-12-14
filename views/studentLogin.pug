@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  navbar
+    a(href="/") Home
+    a(href="studentLogin") Student Login
+    a(href="employeeLogin") Employee Login
+    a(href="contact") Contact Us
+  h1 Student Login
+  form(action='/studentLogin' method='post')
+    label(for='username') Username:
+    input(type='text' name='username' required)
+    br
+    label(for='password') Password:
+    input(type='password' name='password' required)
+    br
+    input(type='submit' value='Login')
